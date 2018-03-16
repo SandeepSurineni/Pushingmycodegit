@@ -2,13 +2,18 @@ import java.io.File;
 
 public class FileExtensionType {
 
-    public static void main(String[] args) {
-         //accept file name or directory name through command line args   
+  public static void main(String[] args) {
+
+         //accept file name through command line args
         String fname =args[0];
 
         File file = new File(fname);
-        System.out.println("File extension Type is :"+getFileExtension(file));
+        System.out.println("File name:"+file.getName());
+       // System.out.println("path:" +file.getAbsolutePath());
+
+       System.out.println("File extension Type is:"+getFileExtension(file));
     }
+
 
     private static String getFileExtension(File file) {
         String fileName = file.getName();
@@ -18,4 +23,5 @@ public class FileExtensionType {
     }
 
 }
+
 

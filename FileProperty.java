@@ -6,12 +6,9 @@ class FileProperty
                 //accept file name or directory name through command line args
                 String fname =args[0];
 
-                //pass the filename or directory name to File object
                 File f = new File(fname);
-
-                //apply File class methods on File object
                 System.out.println("File name :"+f.getName());
-                System.out.println("File Extension :"+f.getFileExtension());
+                //System.out.println("File Extension :"+f.getFileExtension());
                 System.out.println("Path: "+f.getPath());
                 System.out.println("Absolute path:" +f.getAbsolutePath());
                 System.out.println("Parent:"+f.getParent());
